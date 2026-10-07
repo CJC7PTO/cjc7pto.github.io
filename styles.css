@@ -1,221 +1,398 @@
-/* styles.css */
+/* Studio Giseli Costa — estilos
+   Cores: rosé (fundo), ameixa (texto), framboesa (botões), café (apoio), pérola (superfícies) */
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --perola: #FFF9F8;
+    --rose: #F6E4E6;
+    --rose-fundo: #EBCBD3;
+    --ameixa: #2A1424;
+    --framboesa: #C93C74;
+    --framboesa-escura: #A92D5F;
+    --cafe: #6B4234;
+    --fio: rgba(42, 20, 36, 0.18);
+    --fonte-titulo: 'Italiana', Georgia, 'Times New Roman', serif;
+    --fonte-texto: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    margin: 0;
+    background: var(--perola);
+    color: var(--ameixa);
+    font-family: var(--fonte-texto);
+    font-size: 1.0625rem;
+    line-height: 1.65;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #f8c8e6; /* Rosa claro */
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: var(--ameixa); text-underline-offset: 0.18em; }
+a:hover { color: var(--framboesa-escura); }
+
+:focus-visible {
+    outline: 3px solid var(--ameixa);
+    outline-offset: 3px;
+}
+
+/* ---------- Tipografia ---------- */
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+h2 { font-size: clamp(2.1rem, 6.5vw, 3.1rem); margin-bottom: 1.5rem; }
+h3 { font-size: 1.7rem; margin-bottom: 0.5rem; }
+
+p { margin: 0 0 1.1rem; max-width: 62ch; }
+
+/* ---------- Estrutura ---------- */
+
+.miolo {
+    width: 100%;
+    max-width: 68rem;
+    margin: 0 auto;
+    padding-inline: 1.25rem;
+}
+.miolo--estreito { max-width: 44rem; }
+
+.bloco {
+    padding-block: 3.75rem;
+    scroll-margin-top: 1rem;
+}
+.bloco--rose { background: var(--rose); }
+.bloco--blush { background: var(--rose); }
+.bloco--clara { background: #FFF2F1; }
+.bloco--escuro { background: var(--ameixa); color: var(--rose); }
+.bloco--escuro h2 { color: #fff; }
+
+/* ---------- Topo ---------- */
+
+.topo { background: var(--rose); }
+.topo__linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.9rem;
+}
+.marca {
+    font-family: var(--fonte-titulo);
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: var(--ameixa);
+}
+.menu { display: none; }
+.menu a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu a:hover { text-decoration: underline; }
+
+.topo__zap {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--ameixa);
+    border: 1.5px solid var(--ameixa);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 0.25rem 1rem 0.25rem;
+}
+.topo__zap:hover { background: var(--ameixa); color: var(--rose); }
+
+/* ---------- Botões ---------- */
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3rem;
+    padding: 0.8rem 1.5rem;
+    font: 700 1rem/1.2 var(--fonte-texto);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 1.5rem 0.35rem 1.5rem 0.35rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.botao .icone { width: 1.35rem; height: 1.35rem; flex: none; }
+
+.botao--principal { background: var(--framboesa); color: #fff; }
+.botao--principal:hover { background: var(--framboesa-escura); color: #fff; }
+
+.botao--contorno { border-color: var(--ameixa); color: var(--ameixa); }
+.botao--contorno:hover { background: var(--ameixa); color: var(--rose); }
+
+.botao--claro { background: var(--rose); color: var(--ameixa); }
+.botao--claro:hover { background: #fff; color: var(--ameixa); }
+
+.botao--contorno-claro { border-color: var(--rose); color: var(--rose); }
+.botao--contorno-claro:hover { background: var(--rose); color: var(--ameixa); }
+
+/* ---------- Abertura ---------- */
+
+.abertura { padding-block: 2.5rem 3.5rem; }
+
+.abertura__grade {
+    display: grid;
+    gap: 2.25rem;
+    align-items: center;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #4A4A4A;
+    font-size: clamp(3.4rem, 15vw, 6.6rem);
+    line-height: 0.95;
 }
-
-p {
-    font-size: 1.2rem;
-    color: #4A4A4A;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #d81b60; /* Rosa mais escuro */
-}
-
-.social-links {
-    margin-top: 15px;
-}
-
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: bold;
-}
-
-/* Seções */
-section {
-    padding: 50px 0;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Seção Sobre - Estilizando a imagem */
-.about-image img {
-    max-width: 400px; /* Define uma largura máxima para a imagem */
-    width: 100%; /* Garante que a imagem seja responsiva */
-    height: auto; /* Mantém a proporção correta */
-    border-radius: 8px; /* Bordas arredondadas para um design mais suave */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da imagem */
-    margin-bottom: 20px;
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .about-image img {
-        max-width: 300px; /* Diminui um pouco mais a largura em telas menores */
-    }
-}
-
-/* Seção Serviços */
-.service {
-    margin-bottom: 30px;
-}
-
-.service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #4A4A4A;
-}
-
-.service ul {
-    list-style: none;
-}
-
-.service ul li {
-    margin: 5px 0;
-}
-
-/* Seção Galeria */
-.gallery-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px; /* Espaço entre os itens */
-}
-
-.gallery-item {
-    background-color: #fff;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
+h1 .studio {
     display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--cafe);
 }
 
-.gallery-item p {
-    padding: 10px;
-    font-weight: bold;
+.chamada {
+    margin: 1.25rem 0 0;
+    font-size: 1.25rem;
+    line-height: 1.45;
+    max-width: 26ch;
 }
 
-/* Seção Depoimentos */
-.testimonial {
-    display: flex;
-    flex-direction: column;
+
+/* Retrato: foto principal com cantos em folha (mesmo desenho dos botões, em escala grande),
+   um bloco deslocado atrás e uma foto de detalhe do trabalho sobreposta */
+.retrato {
+    position: relative;
+    width: 100%;
+    max-width: 27rem;
+    margin-inline: auto;
+    padding: 0 0 2.5rem;
+    isolation: isolate;
+}
+.retrato::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 1.1rem;
+    right: -1.1rem;
+    width: 84%;
+    aspect-ratio: 4 / 5;
+    background: var(--rose-fundo);
+    border-radius: 5.5rem 0.5rem 5.5rem 0.5rem;
+}
+.retrato__principal {
+    width: 84%;
+    margin-left: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 28%;
+    border-radius: 5.5rem 0.5rem 5.5rem 0.5rem;
+    background: var(--perola);
+}
+.retrato__detalhe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 44%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 50% 55%;
+    border: 6px solid var(--rose);
+    border-radius: 0.5rem 2.75rem 0.5rem 2.75rem;
+}
+
+.nota {
+    margin: 1.25rem 0 0;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--cafe);
+}
+
+/* ---------- Serviços ---------- */
+
+.servicos {
+    display: grid;
+    gap: 2.25rem;
+    margin-bottom: 1.75rem;
+}
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--fio);
+}
+.lista li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--fio);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.apoio { margin-top: 1.5rem; }
+
+/* ---------- Galeria ---------- */
+
+.galeria {
+    columns: 2;
+    column-gap: 0.9rem;
+}
+.galeria figure {
+    margin: 0 0 1.1rem;
+    break-inside: avoid;
+}
+.galeria img {
+    width: 100%;
+    border-radius: 0.35rem;
+    background: var(--rose);
+}
+.galeria figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--cafe);
+}
+
+/* ---------- Depoimentos ---------- */
+
+.fala {
+    margin: 0;
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--fio);
+}
+.fala p {
+    margin: 0 0 0.6rem;
+    font-size: 1.12rem;
+    line-height: 1.6;
+}
+.fala footer {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--cafe);
+}
+
+.mais summary {
+    display: inline-flex;
     align-items: center;
+    gap: 0.6rem;
+    min-height: 3rem;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+}
+.mais summary::-webkit-details-marker { display: none; }
+.mais summary::before {
+    content: "+";
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.45rem;
     text-align: center;
-    margin: 50px 0;
+    font-size: 1.3rem;
+    border: 1.5px solid var(--ameixa);
+    border-radius: 50%;
+    transition: transform 0.25s;
+}
+.mais[open] summary::before { transform: rotate(45deg); }
+.mais[open] summary { margin-bottom: 0.5rem; }
+
+/* ---------- Como chegar ---------- */
+
+.chegar {
+    display: grid;
+    gap: 2rem;
+}
+address {
+    font-style: normal;
+    margin-bottom: 1.1rem;
+    line-height: 1.7;
+}
+.telefone { margin-bottom: 1.5rem; }
+
+.mapa {
+    min-height: 20rem;
+    border-radius: 0.35rem;
+    overflow: hidden;
+    background: var(--rose);
+}
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 20rem;
+    border: 0;
 }
 
-.testimonial-image {
-    margin-bottom: 20px;
+/* ---------- Chamada final e rodapé ---------- */
+
+.bloco--escuro p { color: var(--rose); }
+.bloco--escuro .acoes { margin-top: 1.5rem; }
+
+.rodape {
+    background: var(--ameixa);
+    color: var(--rose);
+    padding-block: 1.75rem 6rem;
+    border-top: 1px solid rgba(246, 228, 230, 0.2);
+    font-size: 0.95rem;
+}
+.rodape p { margin: 0 0 0.4rem; max-width: none; }
+.rodape a { color: var(--rose); }
+.rodape a:hover { color: #fff; }
+.rodape :focus-visible, .bloco--escuro :focus-visible { outline-color: var(--rose); }
+
+/* ---------- WhatsApp fixo (celular) ---------- */
+
+.zap-fixo {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    background: var(--framboesa);
+    color: #fff;
+    border-radius: 1.5rem 0.4rem 1.5rem 0.4rem;
+    box-shadow: 0 4px 14px rgba(42, 20, 36, 0.3);
+}
+.zap-fixo:hover { background: var(--framboesa-escura); color: #fff; }
+.zap-fixo svg { width: 1.9rem; height: 1.9rem; }
+
+/* ---------- Telas maiores ---------- */
+
+@media (min-width: 700px) {
+    .miolo { padding-inline: 2rem; }
+    .menu { display: block; }
+    .bloco { padding-block: 5rem; }
+    .abertura { padding-block: 3.5rem 5rem; }
+    .abertura__grade { grid-template-columns: 1fr 1.05fr; gap: 3rem; }
+    .servicos { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .galeria { columns: 3; column-gap: 1.1rem; }
+    .chegar { grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: stretch; }
+    .rodape { padding-bottom: 2rem; }
+    .zap-fixo { display: none; }
 }
 
-.testimonial-image img {
-    max-width: 100%; /* Faz a imagem ocupar todo o espaço disponível no contêiner */
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Garante que a imagem se ajuste ao tamanho do site em telas pequenas */
-    object-fit: contain; /* Mantém a proporção da imagem */
-}
+/* ---------- Respeitar quem prefere menos movimento ---------- */
 
-/* Títulos */
-h1, h2, h3 {
-    color: #FF69B4; /* Rosa forte */
-    font-family: 'Roboto', sans-serif; /* Mantendo a Roboto, que já está incluída */
-}
-
-/* Botões e Links */
-a {
-    color: #FF69B4; /* Links em rosa */
-}
-
-a:hover {
-    color: #FF1493; /* Rosa mais escuro ao passar o mouse */
-}
-
-/* Seção de Serviços */
-#services h2, #services h3 {
-    color: #FF69B4; /* Títulos dos serviços em rosa */
-}
-
-/* Botão de Contato no WhatsApp */
-.contact-btn {
-    background-color: #FF69B4; /* Cor de fundo rosa */
-    color: white; /* Texto em branco */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.contact-btn:hover {
-    background-color: #FF1493; /* Alterar para rosa mais escuro no hover */
-}
-
-/* Estilos para o Botão de Contato no WhatsApp */
-.contact-btn {
-    background-color: #25D366; /* Verde do WhatsApp */
-    color: white; /* Texto em branco */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-flex; /* Alinha o ícone e o texto */
-    align-items: center; /* Alinha verticalmente o conteúdo */
-}
-
-.contact-btn i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
-    font-size: 1.2rem; /* Tamanho do ícone */
-}
-
-.contact-btn:hover {
-    background-color: #128C7E; /* Verde mais escuro no hover */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .mais summary::before { transition: none; }
 }

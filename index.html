@@ -1,201 +1,265 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Giseli Costa oferece serviços especializados de embelezamento com foco em cílios e sobrancelhas. Atendimento exclusivo e personalizado." />
-    <meta name="keywords" content="cílios em Vilhena, serviços de estética, serviços de cílios, design de sobrancelhas, estética Vilhena, cílios Vilhena, sobrancelhas em Vilhena" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Giseli Costa - Realçando Seu Olhar com Arte</title>
-    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio Giseli Costa | Cílios e sobrancelhas em Vilhena, RO</title>
+    <meta name="description" content="Extensão de cílios (brasileiro, volume inglês, fox) e design de sobrancelhas em Vilhena, RO. Atendimento personalizado. Veja como chegar e agende pelo WhatsApp.">
+    <meta name="theme-color" content="#F6E4E6">
+
+    <!-- Prévia ao compartilhar o link (WhatsApp, Instagram, Facebook).
+         Se o endereço do site mudar, troque https://cjc7pto.github.io/ pelo novo. -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Studio Giseli Costa">
+    <meta property="og:title" content="Studio Giseli Costa | Cílios e sobrancelhas em Vilhena">
+    <meta property="og:description" content="Extensão de cílios e design de sobrancelhas em Vilhena, RO. Veja como chegar e agende pelo WhatsApp.">
+    <meta property="og:url" content="https://cjc7pto.github.io/">
+    <meta property="og:image" content="https://cjc7pto.github.io/img/giseli.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://cjc7pto.github.io/">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 16C9 5 23 5 30 16 23 27 9 27 2 16Z' fill='%23C93C74'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%232A1424'/%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR5W0GY9H0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Dados do negócio para o Google (não aparecem na página) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Studio Giseli Costa",
+      "description": "Extensão de cílios e design de sobrancelhas em Vilhena, RO.",
+      "url": "https://cjc7pto.github.io/",
+      "image": "https://cjc7pto.github.io/img/giseli.jpg",
+      "telephone": "+55 69 99344-2887",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Prof. Ulisses Rodrigues, 582, aos fundos da Auto Elétrica Central",
+        "addressLocality": "Vilhena",
+        "addressRegion": "RO",
+        "postalCode": "76980-000",
+        "addressCountry": "BR"
+      },
+      "sameAs": ["https://www.instagram.com/giselicosta_lash"]
+    }
+    </script>
 
-  gtag('config', 'G-CR5W0GY9H0');
-</script>
+    <!-- Google Analytics (mesmo código do site anterior) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CR5W0GY9H0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CR5W0GY9H0');
+    </script>
 </head>
 
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1>Giseli Costa</h1>
-            <p>Realçando Seu Olhar com Arte</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
+<body id="topo">
+
+    <header class="topo">
+        <div class="miolo topo__linha">
+            <a class="marca" href="#topo">Studio Giseli Costa</a>
+            <nav class="menu" aria-label="Principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#trabalhos">Trabalhos</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#como-chegar">Como chegar</a>
             </nav>
-            <div class="social-links">
-                <a href="https://www.instagram.com/giselicosta_lash" target="_blank">Instagram</a>
-                <a href="https://wa.me/5569993442887" target="_blank">WhatsApp</a>
-            </div>
+            <a class="topo__zap" href="https://wa.me/5569993442887?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" data-evento="clique_whatsapp_topo">WhatsApp</a>
         </div>
     </header>
 
-    <!-- Seção Sobre -->
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Giseli Costa</h2>
-            <br>
-            <div class="about-image">
-                <img src="giseli.jpg" alt="Imagem da sua esposa">
-            </div>
-            <p>Com dedicação ao mundo da beleza, Giseli Costa é uma especialista em realçar a beleza natural dos olhares. Seu diferencial está no compromisso com cada detalhe e no constante aperfeiçoamento de técnicas. Buscando oferecer o melhor para suas clientes, com um atendimento exclusivo e personalizado.</p>
-        </div>
-    </section>
-    
-    <!-- Seção Serviços -->
-    <section id="services">
-        <div class="container">
-            <h2>Serviços de Beleza Personalizados</h2>
-            <br>
-            <div class="service">
-                <h3>Cílios</h3>
-                <ul>
-                    <li>Modelo Brasileiro</li>
-                    <li>Brasileiro Marrom</li>
-                    <li>Volume Inglês</li>
-                    <li>Volume Inglês Marrom</li>
-                    <li>Efeito Fox</li>
-                </ul>
-            </div>
-            <div class="service">
-                <h3>Sobrancelhas</h3>
-                <ul>
-                    <li>Design Personalizado</li>
-                    <li>Design com Henna</li>
-                    <li>Design com Tintura</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <main>
+        <!-- Abertura -->
+        <section class="abertura bloco bloco--blush" aria-labelledby="titulo-principal">
+            <div class="miolo abertura__grade">
+                <div class="abertura__texto">
+                    <h1 id="titulo-principal"><span class="studio">Studio</span> Giseli Costa</h1>
+                    <p class="chamada">Cílios e sobrancelhas em Vilhena. Realçando seu olhar com arte.</p>
+                    <div class="acoes">
+                        <a class="botao botao--principal" href="https://wa.me/5569993442887?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" data-evento="clique_whatsapp_abertura">
+                            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.3 14.97l-.3-.18-3.08.89.9-3-.2-.32A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 4.1c-.2 0-.5.07-.75.35-.26.28-1 1-1 2.4s1.03 2.8 1.18 3c.14.2 2 3.2 4.95 4.35 2.45.97 2.95.78 3.48.73.53-.05 1.7-.7 1.95-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34-.29-.15-1.7-.84-1.96-.94-.26-.1-.46-.14-.65.15-.2.28-.74.93-.9 1.12-.17.2-.33.22-.62.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.28-.02-.44.12-.58.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.2.05-.36-.02-.5-.07-.15-.65-1.58-.9-2.16-.23-.56-.47-.49-.65-.5h-.55Z"/></svg>
+                            Agendar pelo WhatsApp
+                        </a>
+                        <a class="botao botao--contorno" href="#como-chegar" data-evento="clique_como_chegar_abertura">Como chegar</a>
+                    </div>
+                    <!-- Nota e número de avaliações do Google: atualize quando mudarem -->
+                    <p class="nota">Nota 5,0 no Google, com 9 avaliações</p>
+                </div>
 
-    <!-- Seção Galeria -->
-    <section id="gallery">
-        <div class="container">
-            <h2>Transformações de Cílios</h2>
-            <br>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="antesdepois1.jpg" alt="Antes e Depois - Volume Inglês">
-                    <p>Volume Inglês</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="antesdepois5.jpg" alt="Antes e Depois - Volume Brasileiro">
-                    <p>Brasileiro</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="antes-depois4.jpg" alt="Antes e Depois - Volume Inglês">
-                    <p>Brasileiro</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="kemily.jpg" alt="Antes e Depois - Volume Brasileiro">
-                    <p>Brasileiro</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="antes-depois3.jpg" alt="Antes e Depois - Brasileirinho Marrom">
-                    <p>Brasileiro</p>
-                </div>
-                    <div class="gallery-item">
-                    <img src="antes-depois2.jpg" alt="Antes e Depois - Brasileirinho Marrom">
-                    <p>Brasileiro Marrom</p>
-                </div>
+                <div class="retrato">
+                    <img class="retrato__principal" src="img/giseli.jpg" width="900" height="1351" alt="Giseli Costa sorrindo e segurando pinças e espelho usados na extensão de cílios">
+                    <img class="retrato__detalhe" src="img/galeria-1.jpg" width="1000" height="1333" alt="Extensão de cílios volume inglês, vista de perto">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Depoimentos -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>O Que Nossas Clientes Dizem</h2>
+        <!-- Sobre -->
+        <section class="bloco" id="sobre" aria-labelledby="titulo-sobre">
+            <div class="miolo miolo--estreito">
+                <h2 id="titulo-sobre">Quem atende você</h2>
+                <p>Com dedicação ao mundo da beleza, Giseli Costa é especialista em realçar a beleza natural dos olhares. O diferencial está no compromisso com cada detalhe e no aperfeiçoamento constante das técnicas, sempre com atendimento exclusivo e personalizado.</p>
+            </div>
+        </section>
 
-            <div class="testimonial-item">
-                <div class="testimonial-image">
-                    <img src="depoimento1.jpg" alt="Depoimentos de Clientes" />
+        <!-- Serviços -->
+        <section class="bloco bloco--clara" id="servicos" aria-labelledby="titulo-servicos">
+            <div class="miolo">
+                <h2 id="titulo-servicos">Serviços</h2>
+                <div class="servicos">
+                    <div>
+                        <h3>Cílios</h3>
+                        <ul class="lista">
+                            <li>Brasileiro</li>
+                            <li>Brasileiro marrom</li>
+                            <li>Volume inglês</li>
+                            <li>Volume inglês marrom</li>
+                            <li>Efeito fox</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Sobrancelhas</h3>
+                        <ul class="lista">
+                            <li>Design personalizado</li>
+                            <li>Design com henna</li>
+                            <li>Design com tintura</li>
+                            <li>Design com linha</li>
+                        </ul>
+                    </div>
                 </div>
-                <blockquote class="depoimento-texto">
-                    "Cilios maravilhoso, espaço super aconchegante e a moça super simpatica volto sempre!" - Kemilly Meirelis.
-                    <span class="more-text" style="display: none;">
-                      <br>
-                      <br>
-                       "Antendimento maravilhoso qualidade do cilios impecavel e ambiente muito aconchegante. Amei." - Lohana Gonçalves.
-                       <br>
-                       <br>
-                    "Queria agradecer pelo trabalho incrivel que voçê fez no meu olhar estou me sentindo maravilhosa, obrigada pelo atendimento maravilhoso pelo cházinho e a tarde adorável que tive com voçê, seu trabalho é incrivel !!!" - Hillary Munik.</span>
-                    <a href="javascript:void(0);" class="toggle-more" onclick="toggleLeiaMais(this)">Leia Mais</a>
+                <p class="apoio">Não sabe qual escolher? <a href="https://wa.me/5569993442887?text=Ol%C3%A1!%20Quero%20ajuda%20para%20escolher%20o%20modelo%20de%20c%C3%ADlios." target="_blank" rel="noopener" data-evento="clique_whatsapp_servicos">Chame no WhatsApp e tire suas dúvidas.</a></p>
+            </div>
+        </section>
+
+        <!-- Trabalhos -->
+        <section class="bloco" id="trabalhos" aria-labelledby="titulo-trabalhos">
+            <div class="miolo">
+                <h2 id="titulo-trabalhos">Trabalhos</h2>
+                <div class="galeria">
+                    <figure>
+                        <img src="img/galeria-1.jpg" width="1000" height="1333" loading="lazy" alt="Extensão de cílios volume inglês, vista de perto">
+                        <figcaption>Volume inglês</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria-2.jpg" width="1000" height="1018" loading="lazy" alt="Extensão de cílios modelo brasileiro, vista de perto">
+                        <figcaption>Brasileiro</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria-3.jpg" width="790" height="946" loading="lazy" alt="Extensão de cílios e sobrancelha com design, vista de perto">
+                        <figcaption>Cílios e sobrancelha</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria-4.jpg" width="1000" height="1333" loading="lazy" alt="Extensão de cílios modelo brasileiro durante o atendimento">
+                        <figcaption>Brasileiro</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria-5.jpg" width="1000" height="1333" loading="lazy" alt="Extensão de cílios com sobrancelha desenhada, vista de perto">
+                        <figcaption>Cílios e sobrancelha</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria-6.jpg" width="1000" height="1250" loading="lazy" alt="Extensão de cílios modelo brasileiro marrom, vista de perto">
+                        <figcaption>Brasileiro marrom</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="bloco bloco--blush" id="depoimentos" aria-labelledby="titulo-depoimentos">
+            <div class="miolo miolo--estreito">
+                <h2 id="titulo-depoimentos">O que as clientes dizem</h2>
+
+                <blockquote class="fala">
+                    <p>“Cílios maravilhosos, espaço super aconchegante e a moça super simpática. Volto sempre!”</p>
+                    <footer>Kemilly M.</footer>
                 </blockquote>
-            </div>
-
-            <div class="testimonial-item">
-                <div class="testimonial-image">
-                    <img src="depoimento2.jpg" alt="Depoimentos de Clientes" />
-                </div>
-                <blockquote class="depoimento-texto">
-                    "Como é bom ter nossos momentos de autocuidado, melhor ainda quando encontramos pessoas que fazem o que amam.
-                    <span class="more-text" style="display: none;"> Hoje conheci o trabalho da @giseli, que pessoa maravilhosa e talentosa! Uma ótima profissional... a partir de agora não largo mais... amei o resultado." - Alzinete Araujo.</span>
-                    <a href="javascript:void(0);" class="toggle-more" onclick="toggleLeiaMais(this)">Leia Mais</a>
+                <blockquote class="fala">
+                    <p>“Atendimento maravilhoso, qualidade dos cílios impecável e ambiente muito aconchegante. Amei.”</p>
+                    <footer>Lohana G.</footer>
                 </blockquote>
-            </div>
-
-            <div class="testimonial-item">
-                <div class="testimonial-image">
-                    <img src="depoimento3.jpg" alt="Depoimentos de Clientes" />
-                </div>
-                <blockquote class="depoimento-texto">
-                    "Gosto muito do atendimento e principalmente do resultado. Giseli me atendeu muito bem desde a primeira vez que fiz os cílios.
-                    <span class="more-text" style="display: none;"> Ela sempre consegue encaixar um horário que seja bom para mim e, desde a primeira vez, me deixou super confortável... foi o que fez eu ir mais vezes (e, obviamente, o resultado maravilhoso que ela entrega). Recomendo muito e já indiquei para algumas amigas." - Eduarda Campos.</span>
-                    <a href="javascript:void(0);" class="toggle-more" onclick="toggleLeiaMais(this)">Leia Mais</a>
+                <blockquote class="fala">
+                    <p>“Queria agradecer pelo trabalho incrível que você fez no meu olhar. Estou me sentindo maravilhosa. Obrigada pelo atendimento, pelo chazinho e pela tarde adorável que tive com você. Seu trabalho é incrível!”</p>
+                    <footer>Hillary M.</footer>
                 </blockquote>
+
+                <details class="mais">
+                    <summary>Ver mais depoimentos</summary>
+                    <blockquote class="fala">
+                        <p>“Como é bom ter nossos momentos de autocuidado, melhor ainda quando encontramos pessoas que fazem o que amam. Hoje conheci o trabalho da Giseli, que pessoa maravilhosa e talentosa! Uma ótima profissional. A partir de agora não largo mais. Amei o resultado.”</p>
+                        <footer>Alzinete A.</footer>
+                    </blockquote>
+                    <blockquote class="fala">
+                        <p>“Gosto muito do atendimento e principalmente do resultado. A Giseli me atendeu muito bem desde a primeira vez que fiz os cílios. Ela sempre consegue encaixar um horário que seja bom para mim e, desde a primeira vez, me deixou super confortável. Foi o que me fez ir mais vezes (e, claro, o resultado maravilhoso que ela entrega). Recomendo muito e já indiquei para algumas amigas.”</p>
+                        <footer>Eduarda C.</footer>
+                    </blockquote>
+                </details>
+
+                <p class="apoio"><a href="https://www.google.com/maps/search/?api=1&amp;query=Studio+Giseli+Costa+Vilhena" target="_blank" rel="noopener" data-evento="clique_avaliacoes_google">Ver avaliações no Google</a></p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Contato -->
-    <section id="contact">
-        <div class="container">
-            <h2>Agende Seu Atendimento</h2>
-            <br>
-            <a class="contact-btn" href="https://wa.me/5569993442887" target="_blank">
-                <i class="fab fa-whatsapp"></i> Fale Conosco pelo WhatsApp
-            </a>
-        </div>
-    </section>
+        <!-- Como chegar -->
+        <section class="bloco" id="como-chegar" aria-labelledby="titulo-chegar">
+            <div class="miolo chegar">
+                <div class="chegar__texto">
+                    <h2 id="titulo-chegar">Como chegar</h2>
+                    <address>
+                        <strong>Studio Giseli Costa</strong><br>
+                        Aos fundos da Auto Elétrica Central<br>
+                        R. Prof. Ulisses Rodrigues, 582<br>
+                        Jardim Eldorado, Vilhena, RO<br>
+                        CEP 76980-000
+                    </address>
+                    <p class="telefone">WhatsApp e telefone: <a href="tel:+5569993442887">(69) 99344-2887</a></p>
+                    <!-- Dica: quando tiver uma foto da fachada ou do caminho até a porta,
+                         salve em img/entrada.jpg e coloque aqui:
+                         <img src="img/entrada.jpg" width="1000" height="750" loading="lazy" alt="Entrada do Studio Giseli Costa"> -->
+                    <a class="botao botao--principal" href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Prof.+Ulisses+Rodrigues%2C+582%2C+Jardim+Eldorado%2C+Vilhena+-+RO%2C+76980-000" target="_blank" rel="noopener" data-evento="clique_rota">Abrir rota no Google Maps</a>
+                </div>
+                <div class="mapa">
+                    <iframe title="Mapa com a localização do Studio Giseli Costa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+Prof.+Ulisses+Rodrigues%2C+582%2C+Vilhena+-+RO&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>© 2024 Giseli Costa. Todos os direitos reservados.</p>
+        <!-- Chamada final -->
+        <section class="bloco bloco--escuro" id="agendar" aria-labelledby="titulo-agendar">
+            <div class="miolo miolo--estreito">
+                <h2 id="titulo-agendar">Agende seu horário</h2>
+                <p>Chame no WhatsApp e combine o melhor horário para você.</p>
+                <div class="acoes">
+                    <a class="botao botao--claro" href="https://wa.me/5569993442887?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" data-evento="clique_whatsapp_final">Agendar pelo WhatsApp</a>
+                    <a class="botao botao--contorno-claro" href="https://www.instagram.com/giselicosta_lash" target="_blank" rel="noopener" data-evento="clique_instagram">Ver o Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="miolo">
+            <p>Studio Giseli Costa · Cílios e sobrancelhas em Vilhena, RO</p>
+            <p>R. Prof. Ulisses Rodrigues, 582, Jardim Eldorado · <a href="https://www.instagram.com/giselicosta_lash" target="_blank" rel="noopener">@giselicosta_lash</a></p>
+            <p>© 2026 Giseli Costa. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <!-- Botão fixo de WhatsApp (só no celular) -->
+    <a class="zap-fixo" href="https://wa.me/5569993442887?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp" data-evento="clique_whatsapp_fixo">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.3 14.97l-.3-.18-3.08.89.9-3-.2-.32A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 4.1c-.2 0-.5.07-.75.35-.26.28-1 1-1 2.4s1.03 2.8 1.18 3c.14.2 2 3.2 4.95 4.35 2.45.97 2.95.78 3.48.73.53-.05 1.7-.7 1.95-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34-.29-.15-1.7-.84-1.96-.94-.26-.1-.46-.14-.65.15-.2.28-.74.93-.9 1.12-.17.2-.33.22-.62.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.28-.02-.44.12-.58.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.2.05-.36-.02-.5-.07-.15-.65-1.58-.9-2.16-.23-.56-.47-.49-.65-.5h-.55Z"/></svg>
+    </a>
+
     <script>
-        function toggleLeiaMais(link) {
-            var moreText = link.previousElementSibling; // Seleciona o <span> que contém o texto adicional
-            if (moreText.style.display === "none") {
-                moreText.style.display = "inline"; // Exibe o texto
-                link.textContent = "Leia Menos"; // Altera o texto do link
-            } else {
-                moreText.style.display = "none"; // Esconde o texto
-                link.textContent = "Leia Mais"; // Altera o texto do link de volta
+        // Registra no Google Analytics os cliques nos botões de contato e de rota.
+        document.addEventListener('click', function (e) {
+            var alvo = e.target.closest('[data-evento]');
+            if (alvo && typeof gtag === 'function') {
+                gtag('event', alvo.getAttribute('data-evento'));
             }
-        }
+        });
     </script>
 </body>
-
 </html>

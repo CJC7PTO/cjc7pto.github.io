@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://studiogiselicosta.site/</loc>
-        <lastmod>2024-11-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/giseli.jpg</image:loc>
-            <image:caption>Imagem da Giseli Costa</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://studiogiselicosta.site/sobre</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://studiogiselicosta.site/contato</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://studiogiselicosta.site/gallery</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/antesdepois1.jpg</image:loc>
-            <image:caption>Antes e Depois - Volume Inglês</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/antesdepois5.jpg</image:loc>
-            <image:caption>Antes e Depois - Volume Brasileiro</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/antes-depois4.jpg</image:loc>
-            <image:caption>Antes e Depois - Volume Inglês</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/kemily.jpg</image:loc>
-            <image:caption>Antes e Depois - Volume Brasileiro</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/antes-depois3.jpg</image:loc>
-            <image:caption>Antes e Depois - Brasileirinho Marrom</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/antes-depois2.jpg</image:loc>
-            <image:caption>Antes e Depois - Brasileirinho Marrom</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://studiogiselicosta.site/testimonials</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/depoimento1.jpg</image:loc>
-            <image:caption>Depoimentos de Clientes</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/depoimento2.jpg</image:loc>
-            <image:caption>Depoimentos de Clientes</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://studiogiselicosta.site/depoimento3.jpg</image:loc>
-            <image:caption>Depoimentos de Clientes</image:caption>
-        </image:image>
+        <loc>https://cjc7pto.github.io/</loc>
+        <lastmod>2026-10-06</lastmod>
     </url>
 </urlset>
